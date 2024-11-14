@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Pribadi</title>
+    <style>
+      /* Gaya dasar */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #d9a7c7, #fffcdc);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        color: #333;
+      }
+
+      /* Gaya header */
+      header {
+        font-size: 28px;
+        background-color: #6d597a;
+        color: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Gaya main */
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        padding: 20px;
+        max-width: 1000px;
+      }
+
+      /* Struktur layout konten profil */
+      .profile-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      article,
+      aside {
+        flex: 1;
+        padding: 20px;
+        background-color: #f1faee;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        transition: transform 0.3s;
+      }
+
+      article:hover,
+      aside:hover {
+        transform: scale(1.02);
+      }
+
+      /* Gaya gambar profil */
+      .profile-image img {
+        width: 150px;
+        border-radius: 50%;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+
+      .profile-image img:hover {
+        transform: scale(1.1);
+      }
+
+      /* Judul bagian */
+      .about-me h2,
+      .personal-info h2,
+      .social-links h2 {
+        color: #457b9d;
+        margin-bottom: 10px;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* Paragraf */
+      .about-me p,
+      .personal-info p {
+        line-height: 1.6;
+        color: #555;
+      }
+
+      /* Tautan sosial */
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .social-links a {
+        text-decoration: none;
+        transition: transform 0.3s, color 0.3s;
+      }
+
+      .social-links a:hover {
+        transform: scale(1.1);
+        color: #457b9d;
+      }
+
+      .social-links img {
+        width: 36px;
+        height: 36px;
+      }
+
+      /* Media query untuk responsif */
+      @media (max-width: 768px) {
+        .profile-container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Profil Pribadi</h1>
+    </header>
+    <main>
+      <div class="profile-container">
+        <article>
+          <section class="profile-image">
+            <img src="img.jpg" alt="Foto Profil" />
+          </section>
+          <section class="about-me">
+            <h2>Tentang Saya</h2>
+            <p>
+              Perkenalkan saya adalah mahasiswa sistem komputer dari universitas sriwijaya , saya tertarik dengan dunia pentester dan ingin menjadi sorang pentester ,saat ini saya sedang mengikuti program dari kuliah merdeka yaiut study
+              independent pada kali ini saya memilih path cloud computing karena saya tertarik bagaimana cara mengelola data yang benar
+            </p>
+          </section>
+        </article>
+        <aside>
+          <section class="personal-info">
+            <h2>Informasi Pribadi</h2>
+            <p><strong>Umur:</strong> 21 tahun</p>
+            <p><strong>Email:</strong> raihanputra0269@gmail.com</p>
+            <p><strong>Universitas:</strong> Universitas Sriwijaya</p>
+          </section>
+          <section class="social-links">
+            <h2>Temukan Saya</h2>
+            <a href="https://www.linkedin.com/in/raihan-putra-ersananda-000627328" target="_blank">
+              <img src="LinkedIn.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/pico556" target="_blank">
+              <img src="GitHub.png" alt="GitHub" />
+            </a>
+            <a href="https://www.instagram.com/aanuuaaanu" target="_blank">
+              <img src="Instagram.png" alt="Instagram" />
+            </a>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
